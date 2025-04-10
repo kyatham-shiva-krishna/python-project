@@ -8,7 +8,7 @@ positions_map = {
     7: (2, 0), 8: (2, 1), 9: (2, 2),
 }
 
-# Optional color support
+# color
 class Colors:
     X = "\033[94m"  # Blue
     O = "\033[91m"  # Red
@@ -135,7 +135,7 @@ def play_game():
                 os.remove(FILENAME)
             break
 
-        # Switch players
+        # Switching players
         current_symbol = "O" if current_symbol == "X" else "X"
         player_turn = 2 if player_turn == 1 else 1
 
